@@ -1,0 +1,280 @@
+
+
+body{
+	
+}
+
+
+
+header p{
+	font-size: 15px;
+}
+
+.topHeader{
+	border-bottom: 1px solid grey;
+}
+
+.headerBig{
+	font-weight: 700;
+}
+
+
+.container-fluid{
+	padding: 0px;
+}
+
+.right{
+	float:right;
+}
+
+
+
+#logo{
+padding: 30px 0 50px 0;
+}
+
+.searchBox{
+	position: relative;
+	padding-top: 75px;
+}
+
+#bannerImg{
+	width: 100%;
+	height: auto;
+}
+
+.banner{
+	position: relative;
+}
+
+.bannerContent p{
+	font-size: 1.8em;
+}
+
+.bannerContent h1{
+    font-size: 4.5em;
+    font-weight: 1000;
+    color: #0F683C;
+    }
+
+.bannerAlignment {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    padding-right: 20%;
+}
+
+.contentRight{
+	position: relative;
+	float: right;
+}
+
+
+
+/* linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), */
+.wrapperWhyUs{
+	background:url(../img/background2.png);
+   width: 100%;
+   height: 500px;    /* TO BE CHANGED AFTER HTML  into AUTO*/
+   
+
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.headingImage{
+	padding-top: 2em;
+	font-size: 3em;
+    width: 100%;
+    font-weight: 550;
+    text-align: center;
+    color: #0F683C;
+}
+
+.donation{
+	position: relative;
+	width: 100%;
+}
+
+
+#makeDonationImg{
+	width: 100%;
+	height: auto;
+}
+
+.donationOuter{
+	position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 30%;
+    height: auto;
+  
+    padding: 25px;
+    background: white;
+
+	
+}
+
+
+.cardDonation{
+	border: 1px solid green;
+    padding: 30px;
+}
+
+
+.product{
+	padding-bottom: 250px;
+}
+
+
+.wrapperExploreBackground{
+	position: relative;
+	width: 100%;
+}
+#backgroundExplore{
+	width: 100%;
+	height: auto;
+}
+
+.wrapperExplore{
+	position: absolute;
+    top: -30px;
+	
+}
+
+.leafContent{
+padding-top: 10%;
+}
+
+
+
+
+
+.happyClient{
+	text-align: center;
+}
+
+
+.happyClient .item h4 {
+	position: relative;
+	color: #8f8f8f;
+	font-size: 18px;
+	letter-spacing: 0;
+	line-height: 30px;
+	font-weight: 300;
+	padding: 0 100px;
+	margin-bottom: 15px;
+}
+
+.happyClient .item span {
+	color: #0F683C;
+	font-family: 'Conv_Damion-Regular';
+	text-transform: capitalize;
+	font-size: 24px;
+	display: block;
+	margin-bottom: 20px;
+}
+.happyClient .owl-prev {
+	position: absolute;
+	top: 20%;
+	left: 0px;
+}
+.happyClient .owl-next {
+	position: absolute;
+	top: 20%;
+	right: 0px;
+}
+.happyClient .owl-next .fa, .happyClient .owl-prev .fa {
+	font-size: 24px;
+	color: #909090;
+
+} 
+
+.owl-theme .owl-nav [class*=owl-]{
+	background: #FFF;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+	background: #e6e6e6;
+}
+
+
+
+
+
+#recentNews{
+	background: #F4FFF9;
+	padding-top: 60px;
+	padding-bottom: 150px;
+}
+
+.recenNew{
+	padding-top: 30px;
+}
+
+.greenBold{
+	color: #0F683C;
+	font-weight: 600;
+	
+}
+
+
+.headingAlignment{
+    padding-bottom: 30px;
+}
+
+.RecentNewsContent{
+	padding-bottom: 20px;
+}
+
+
+.card2{
+    padding: 30px;
+    border: 2px solid green;
+    }
+
+.upComingEventsContent{
+	padding-bottom: 40px;
+}
+
+.upComingEvent{
+	padding-bottom: 15px;
+}
+
+
+header{
+	
+}
+
+section{
+	
+}
+
+
+.footerClass{
+	padding-top: 50px;
+	  background: linear-gradient( rgba(244, 255, 249, 0.9), rgba(244, 255, 249, 0.9) ), url(../img/footerBg.png);
+	
+
+}
+
+.belowLogo{
+	padding-right: 20px;
+	padding-top: 30px;
+}
+
+.footerLocation{
+	padding-top: 80px;
+}
+
+.footerLocation h4{
+	padding-bottom: 10px;
+}
+
+.lowerFooter{
+	text-align: center;
+	border-top: 1px solid white;
+	padding: 20px 0px 20px 0px;
+}
