@@ -16,7 +16,7 @@ header p{
 }
 
 .topHeader{
-	border-bottom: 1px solid grey;
+	/* border-bottom: 1px solid grey; */
 }
 
 .headerBig{
@@ -30,9 +30,29 @@ header p{
 	padding: 14px 3px 0px 3px;
 }
 
-.container-fluid{
-	padding:;
+.headerTop{
+	position:relative;
+	z-index: 999;
 }
+
+
+
+/* SHADOW NOT WORKING */
+/* .headerTop::after{
+       content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    bottom: 0px;
+    width: 80%;
+    height: 50%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    left: 10%;
+    right: 10%;
+} */
+
 
 .right{
 	float:right;
@@ -139,6 +159,7 @@ padding: 30px 0 50px 0;
 /* linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), */
 .wrapperWhyUs{
 	/* background:url(../img/background2.png); */
+	position: relative;
    width: 100%;
  /*   height: 500px;   */  /* TO BE CHANGED AFTER HTML  into AUTO*/
    
@@ -147,6 +168,30 @@ padding: 30px 0 50px 0;
     background-size: cover; */
 }
 
+.leaves{
+	position: absolute;
+	opacity: 0.2;
+}
+
+#leaf1{
+	top: 0px;
+	right: 0px;
+}
+
+#leaf2{
+		top: 30%;
+		right: 0px;
+}
+
+#leaf3{
+	top: 0px;
+	left: 0px;
+}
+
+#leaf4{
+	top: 50%;
+	left: 0px;
+}
 
 
 
@@ -219,6 +264,14 @@ ul {
     margin-bottom: 40px;
 }
 
+.about_right {
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
 .text-right {
     text-align: right;
     color: black;
@@ -261,14 +314,8 @@ ul {
 
 
 
-
-
-
-
-
-
 .headingImage{
-	padding-top: 2em;
+	padding-top: 2.5em;
 	font-size: 3em;
     width: 100%;
     font-weight: 550;
@@ -289,13 +336,16 @@ ul {
 
 .donationOuter{
 	position: absolute;
-    top: 3%;
-    left: 5%;
-    width: 40%;
+    width: 550px;
     height: auto;
   
     padding: 25px;
     background: white;
+     top: 50%;
+     left: 5%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0% -50%);
 
 	
 }
@@ -347,7 +397,7 @@ ul {
 
 
 .product{
-	padding-bottom: 250px;
+	padding-bottom: 125px;
 }
 
 .carouselProduct{
@@ -422,9 +472,9 @@ ul {
 
 
 .wrapperExploreBackground{
-	position: relative;
-	width: 100%;
+
 }
+
 #backgroundExplore{
 	width: 100%;
 	height: auto;
@@ -438,16 +488,80 @@ ul {
 	
 }
 
+.leafWrapper{
+	position: relative;
+	background: url(../img/background2.png);
+	 background-repeat: round;
+	     height: 500px;
+}
+
 .leafContent{
-padding-top: 10%;
+padding-top: 8%;
+padding-left: 6%;
+text-align: left;
+}
+
+.leafContent>h1{
+	font-size: 3em;
+    color: #0F683C;
+ 
+    /* border: 1px solid; */
+    /* border-block-start-width: 50px; */
+    position: relative;
+    margin-bottom: 30px;
+    }
+
+.leafContent>h1:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 5px solid #0F683C;
+    bottom: -10px;
+    height: 5px;
+    width: 79px;
+}
+
+.leafImage{
+	overflow: hidden;
+	margin-left: 50px;
 }
 
 
 .imgExplore{
-	height: 104%;
-	width: auto;
+
+    width: auto;
+    height: 550px;
+    top: -6%;
+    position: absolute
+   
+    
+    /* overflow: hidden; */
+	
 }
 
+#exploreLeaf{
+	outline: 2px solid white;
+    outline-offset: -15px;
+}
+
+#exploreLeaf::after{
+
+}
+
+
+.leafCenter{
+	color: #0F683C;
+    position: absolute;
+    top: 50%;
+    font-size: 42px;    
+}
+
+.fa-play{
+padding: 18px 20px 20px 25px;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 50%
+}
 
 
 
@@ -545,6 +659,15 @@ h3{
 	padding-bottom: 20px;
 }
 
+.RecentNewsContent>h5{
+	padding-top:12px;
+}
+
+
+.fill{
+	width: 100%;
+}
+
 .card2{
     padding: 30px;
     border: 2px solid green;
@@ -632,3 +755,412 @@ footer ul{
 footer h4{
 	font-weight: 600;
 }
+
+
+
+
+
+@media (min-width: 320px) {  
+	 .headerTop {
+	    flex-direction: column-reverse;
+	}
+
+
+	 .headerBar{
+	 	display: block;
+	 	text-align: left;
+	 }
+
+	 #logo{
+		display: block;
+		margin: 0 auto;
+	}
+
+	.addressTop{
+		display:none;
+	}
+
+	.searchBox{
+		text-align: center;
+		padding: 20px;
+		margin: 0px;
+		display: block;
+	}
+
+
+	 #bannerImg{
+	 	display: block;
+	 	height: 500px;
+	 	width: 100%;
+	 	object-fit: cover;
+	 }
+
+	 .bannerContent p {
+    font-size: 1.2em;
+	}
+
+	.bannerContent h1 {
+    font-size: 2.8em;
+    }
+
+     .bannerButton {
+    font-size: 1.1em;
+    padding: 8px 30px;
+    }
+
+
+
+	 .bannerAlignment{
+	 	display: block;
+	 	
+
+	 	
+	 }
+	 .welcome_text{
+	 	
+    padding-left: 0px;
+	 }
+
+
+
+	.text-right {
+	padding-left: 0px;
+	}
+
+	.text-left {
+	padding-right: 0px;
+	}
+
+
+
+
+	 .donationOuter{
+	position: relative;
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    left: 0%;
+    background: white;	
+      background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(../img/background3_1.png); *
+
+
+	}
+
+	.donateButton {
+    font-size: 1em;
+	}
+
+	.inputShape{
+		width: 100%;
+	}
+
+	.donateButton{
+	    width: 100%;
+	    
+	}
+
+	#makeDonationImg{
+		display: none;
+	}
+
+	.happyClient .item h4 {
+	padding: 0px 40px;
+	}
+	.welcomeContent {
+    padding-top: 0px;
+	}
+
+	.marginHeading {
+    margin-bottom: 20px;
+	}
+	.headingImage {
+    font-size: 1.8em;
+	}
+
+	.leafWrapper{
+		height: auto;
+	}
+	.leafImage{
+		margin-left: 0px;
+	}
+
+	.imgExplore {
+    width: 100%;
+    height: auto;
+    /* top: -6%; */
+    position: relative;
+    margin: 0 auto;
+	}
+
+	.leafContent{
+		padding: 20px;
+	}
+
+
+		#leaf4 {
+    top: 150%;
+	}
+
+
+	#leaf2 {
+    top: 230%;
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 425px) {  
+ .headerBar{
+ 	display: none;
+ 	}
+}
+
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+	.headerTop {
+	    flex-direction: column;
+	    flex-flow: inherit
+	}
+
+	
+	 #bannerImg{
+	 	display: block;
+	 	height: auto;
+	 	width: 100%;
+	 	object-fit: cover;
+	 }
+
+	 .bannerContent p {
+    font-size: 1.4em;
+	}
+
+	.bannerContent h1 {
+    font-size: 3.5em;
+    }
+
+    .bannerButton {
+    font-size: 1.2em;
+    padding: 15px 45px;
+    }
+
+
+
+
+
+	 .bannerAlignment {
+    display: block;
+		}
+
+	  .headerBar{
+	 	display: inline;
+	 	text-align: left;
+	 }
+
+	   .headerBar{
+	 	display: inline;
+	 	text-align: right;
+	 }
+	.addressTop{
+		display:none;
+	}
+
+	.searchBox{
+	position: relative;
+	padding-top: 75px;
+	text-align: right;
+	}
+
+	#logo{
+		display: block;
+		margin: 0;
+	}
+
+	.text-right {
+	padding-left: 2%;
+	}
+
+	.text-left {
+	padding-right: 2%;
+	}
+
+
+.donationOuter{
+	position: relative;
+    width: auto%;
+    height: auto;
+    margin: 25px;
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(../img/background3_1.png); *
+	}
+
+	.inputShape{
+		width: 75%;
+	}
+
+
+
+	.donateButton{
+	    width: 75%;
+	    
+	}
+
+	..happyClient .item h4 {
+	padding: 0px 100px;
+	}
+	.welcomeContent {
+    padding-top: 100px;
+	}
+	.marginHeading {
+    margin-bottom: 50px;
+	}
+
+
+	.headingImage {
+    font-size: 3em;
+	}
+	
+
+	.leafWrapper{
+		height: 500px;
+	}
+
+	.imgExplore{
+
+    width: auto;
+    height: 550px;
+    top: -6%;
+    position: absolute
+   
+    
+    /* overflow: hidden; */
+	
+	}
+
+	.leafImage{
+		margin-left: 20px;
+	}
+
+	.leafContent {
+    padding-top: 5%;
+    padding-left: 6%;
+    text-align: left;
+	}
+
+	#leaf4 {
+    top: 50%;
+	}
+
+
+	#leaf2 {
+    top: 30%;
+	}
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+	.headerBar{
+ 	display: block; 
+ 	
+ 	}
+
+ 	.addressTop{
+		display:block;
+	}
+ 	.text-right {
+	padding-left: 25%;
+	}
+
+	.text-left {
+	padding-right: 25%;
+	}
+
+ 
+.donationOuter{
+	position: absolute;
+    width: 550px;
+    height: auto;
+  
+    padding: 25px;
+    background: white;
+     top: 45%;
+     left: 5%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0% -50%);
+
+	
+}
+
+.inputShape{
+	width: 75%;
+}
+
+
+
+.donateButton{
+    width: 75%;
+    
+}
+
+#makeDonationImg{
+	display: block;
+}
+
+
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+	.donationOuter{
+		width: 550px;
+	}
+
+
+	.leafImage{
+		margin-left: 100px;
+	}
+    
+}
+
+@media (min-width: 1500px) {  
+
+.leafImage {
+    margin-left: 150px;
+}
+ 
+ }
+
+
+/*      background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/BackgroundSection1.png); */
