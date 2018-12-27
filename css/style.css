@@ -16,8 +16,10 @@ header p{
 }
 
 .topHeader{
-	/* border-bottom: 1px solid grey; */
+	position:relative;
+	z-index: 999;/* border-bottom: 1px solid grey; */
 }
+
 
 .headerBig{
 	font-weight: 700;
@@ -31,14 +33,13 @@ header p{
 }
 
 .headerTop{
-	position:relative;
-	z-index: 999;
+	
 }
 
 
 
 /* SHADOW NOT WORKING */
-/* .headerTop::after{
+.topHeader::after{
        content: "";
     position: absolute;
     z-index: -1;
@@ -51,8 +52,15 @@ header p{
     border-radius: 100%;
     left: 10%;
     right: 10%;
-} */
+} 
 
+
+.headerTop a{
+	font-size: 0.9em;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	color: #8e8a8a;
+}
 
 .right{
 	float:right;
@@ -553,14 +561,21 @@ text-align: left;
 	color: #0F683C;
     position: absolute;
     top: 50%;
-    font-size: 42px;    
+    font-size: 42px; 
+    left: 50%;   
+      -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .fa-play{
 padding: 18px 20px 20px 25px;
     border-radius: 10px;
     background-color: white;
-    border-radius: 50%
+    border-radius: 50%;
+   
+   	
+    
 }
 
 
@@ -796,11 +811,11 @@ footer h4{
 	 }
 
 	 .bannerContent p {
-    font-size: 1.2em;
+    font-size: 1em;
 	}
 
 	.bannerContent h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     }
 
      .bannerButton {
@@ -906,6 +921,17 @@ footer h4{
     top: 230%;
 	}
 
+	.leafCenter {
+    color: #0F683C;
+    position: absolute;
+    top: 46%;
+    font-size: 42px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 
 
 
@@ -955,10 +981,6 @@ footer h4{
     font-size: 1.2em;
     padding: 15px 45px;
     }
-
-
-
-
 
 	 .bannerAlignment {
     display: block;
@@ -1067,20 +1089,16 @@ footer h4{
     top: 30%;
 	}
 
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
+	.leafCenter {
+    color: #0F683C;
+    position: absolute;
+    top: 46%;
+    font-size: 42px;
+    left: 53%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
 }
@@ -1136,6 +1154,17 @@ footer h4{
 	display: block;
 }
 
+.leafCenter {
+    color: #0F683C;
+    position: absolute;
+    top: 67%;
+    font-size: 42px;
+    left: 59%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 
  
 }
@@ -1151,6 +1180,17 @@ footer h4{
 	.leafImage{
 		margin-left: 100px;
 	}
+
+	.leafCenter {
+    color: #0F683C;
+    position: absolute;
+    top: 67%;
+    font-size: 42px;
+    left: 67%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
     
 }
 
@@ -1158,6 +1198,17 @@ footer h4{
 
 .leafImage {
     margin-left: 150px;
+}
+
+.leafCenter {
+    color: #0F683C;
+    position: absolute;
+    top: 67%;
+    font-size: 42px;
+    left: 53%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
  
  }
