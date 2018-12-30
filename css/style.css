@@ -20,6 +20,9 @@ header p{
 .topHeader{
 	position:relative;
 	z-index: 999;/* border-bottom: 1px solid grey; */
+	border-bottom: 1px solid #E2E1E1;
+
+
 }
 
 
@@ -41,7 +44,7 @@ header p{
 
 
 /* SHADOW NOT WORKING */
-.topHeader::after{
+/* .topHeader::after{
        content: "";
     position: absolute;
     z-index: -1;
@@ -54,7 +57,7 @@ header p{
     border-radius: 100%;
     left: 10%;
     right: 10%;
-} 
+}  */
 
 
 .headerTop a{
